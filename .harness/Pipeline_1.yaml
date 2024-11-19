@@ -35,3 +35,4 @@ pipeline:
                     repo: stevecoccia/myapp:tagname
                     tags:
                       - test_v1
+                    context: .
