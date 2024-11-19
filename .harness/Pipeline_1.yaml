@@ -36,3 +36,7 @@ pipeline:
                     tags:
                       - test_v1
                     context: .
+                    buildArgs:
+                      GITHUB_TOKEN: ${secrets.getValue("GitHubToken")}
+                    envVariables:
+                      GITHUB_TOKEN: GithubToken
