@@ -32,7 +32,7 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: account.DockerHubConnector
-                    repo: stevecoccia/myapp:test_v1
+                    repo: stevecoccia/myapp
                     tags:
                       - test_v1
                     context: .
