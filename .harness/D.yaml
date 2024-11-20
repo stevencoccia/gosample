@@ -1,9 +1,20 @@
 service:
-  name: DeployToEC2
+  name: gosample-service
   identifier: DeployToEKS
   serviceDefinition:
     type: Kubernetes
-    spec: {}
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: account.DockerHubConnector
+                imagePath: stevecoccia/gosample
+                tag: <+input>
+                digest: ""
+              identifier: GoServiceArtifactID
+              type: DockerRegistry
   gitOpsEnabled: false
   orgIdentifier: default
   projectIdentifier: Interview_Project
