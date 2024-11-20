@@ -1,5 +1,5 @@
 service:
-  name: DeployToEKS
+  name: DeployToEC2
   identifier: DeployToEKS
   serviceDefinition:
     type: Kubernetes
