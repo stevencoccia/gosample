@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_stevencoccia_gosample_1732115647304-pr-trigger-input-set
+  identifier: Build_stevencoccia_gosample_1732115647304prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Test
+  pipeline:
+    identifier: Build_stevencoccia_gosample_1732115647304
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
