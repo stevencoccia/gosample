@@ -1,0 +1,8 @@
+environment:
+  name: AWS Env
+  identifier: AWS_Env
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: Interview_Project
