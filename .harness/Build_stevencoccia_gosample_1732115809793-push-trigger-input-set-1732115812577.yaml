@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_stevencoccia_gosample_1732115809793-push-trigger-input-set
+  identifier: Build_stevencoccia_gosample_1732115809793pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Test
+  pipeline:
+    identifier: Build_stevencoccia_gosample_1732115809793
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
