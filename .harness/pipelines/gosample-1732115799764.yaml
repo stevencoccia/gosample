@@ -71,15 +71,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: gosampleservice
-            serviceInputs:
-              serviceDefinition:
-                type: Kubernetes
-                spec:
-                  artifacts:
-                    primary:
-                      primaryArtifactRef: <+input>
-                      sources: <+input>
+            serviceRef: harnessguestbook
           environment:
             environmentRef: harnessdevenv
             deployToAll: false
