@@ -1,5 +1,5 @@
 template:
-  name: Sample Script Step
+  name: sample-script-template
   identifier: sampleScriptStep
   versionLabel: v1
   type: Step
