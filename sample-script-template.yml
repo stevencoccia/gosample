@@ -1,0 +1,18 @@
+template:
+  name: Sample Script Step
+  identifier: sampleScriptStep
+  versionLabel: v1
+  type: Step
+  spec:
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: |
+            echo "This is a reusable step template"
+            echo "Running in environment: <+input.environment>"
+      environmentVariables: []
+      outputVariables: []
