@@ -84,14 +84,6 @@ pipeline:
                   identifier: Kanary
                   steps:
                     - step:
-                        type: K8sCanaryDelete
-                        name: K8sCanaryDelete_1
-                        identifier: K8sCanaryDelete_1
-                        spec:
-                          delegateSelectors:
-                            - kubernetes-delegate
-                        timeout: 10m
-                    - step:
                         type: K8sCanaryDeploy
                         name: K8sCanaryDeploy_1
                         identifier: K8sCanaryDeploy_1
@@ -101,6 +93,12 @@ pipeline:
                             type: Count
                             spec:
                               count: 1
+                        timeout: 10m
+                    - step:
+                        type: K8sCanaryDelete
+                        name: K8sCanaryDelete_1
+                        identifier: K8sCanaryDelete_1
+                        spec:
                           delegateSelectors:
                             - kubernetes-delegate
                         timeout: 10m
